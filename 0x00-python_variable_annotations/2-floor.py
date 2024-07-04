@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
-import math
 """ type-annotated floor module """
 
 
 def floor(n: float) -> int:
     """ return the floor of a number """
-    result: int = math.floor(n)
-    return result
+    return int(n)
