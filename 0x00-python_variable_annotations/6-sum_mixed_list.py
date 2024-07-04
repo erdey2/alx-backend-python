@@ -2,13 +2,6 @@
 """typed annotation mixed list """
 from typing import List, Union
 
-MixedList = List[Union[int, float]]
 
-
-def sum_mixed_list(mxd_lst: MixedList) -> float:
-    result: float = 0
-    i: int
-
-    for i in mxd_lst:
-        result += i
-    return result
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
+    return sum(mxd_lst)
