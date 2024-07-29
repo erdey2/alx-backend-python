@@ -26,6 +26,7 @@ class TestAccessNestedMap(TestCase):
             access_nested_map(nested_map, path)
         self.assertEqual(f"KeyError('{expected}')", repr(err.exception))
 
+
 class TestGetJson(TestCase):
     """ Test utils.get_json function"""
 
